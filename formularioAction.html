@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javaScript.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario Button Simples</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+
+      <hr>
+
+      <h1>Formulario Button JavaScript</h1>
+      <form id="meuFormulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+        <br><br>
+
+        <button type="button" onclick="limparMensagem()">Limpar Mensagem</button>
+        <button type="submit">Enviar</button>
+      </form>
+      
+      <script>
+        function limparMensagem() {
+          document.getElementById("mensagem").value = "";
+          alert("Mensagem limpa com sucesso!");
+        }
+      </script>
+    <h2>Ao clicar em apagar, será somente apagado o TextArea, utilizando o javaScript para localizar por ID</h2>
+</html>
