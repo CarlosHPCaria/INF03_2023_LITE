@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Vídeos em Páginas HTML</h1>
+
+    <div>
+         <h3 >A tag < video > é o elemento fundamental para a inserção de vídeos em uma página HTML.</h3>
+          EX:<video width="480" height="320" controls>
+            <source src="videos/Rock lee vs Gaara - Linkin park.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <br>
+          EX:<video width="480" height="320" controls>
+            <source src="videos/Abertura Os Cavaleiros Do Zodíaco - PEGASUS FANTASY (BR) [1080p].mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+         <hr>
+    </div>
+
+        <div>
+          <h3 >É possivel adcionar legendas ou pistas de áudio em 
+            diferentes idiomas, utilize a tag < track > dentro da tag < video></h3>
+          EX:<br> 
+            <video width="320" height="240" controls>
+            <track kind="captions" src="videos/link.vtt" srclang="pt" label="Português">
+            <source src="videos/Rock lee vs Gaara - Linkin park.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <hr>
+        </div>
+</body>
+</html>
