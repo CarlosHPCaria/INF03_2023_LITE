@@ -1,29 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #ffffff;
+    color: #181818;
 
     padding: 20px;
 }
 
-h1 {
-    color: #000000;
+
+h2,h3,h4,h5 {
    
-}
-h2 {
-    color: #d5f50bcd;
-    
-}h3 {
-    color: #e24020;
- 
-}h4 {
-    color: #cc00b8;
-    
-}h5 {
-    color: #6c5e6b;
- 
-}h6 {
-    color: #cc00b8;
-   
+    font-weight: normal;
 }
 
+em,i {
+    
+  font-size: 20;
+}
+pre{    
+    margin: 0%;
+}

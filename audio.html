@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+  <div>
+    <h1>Áudio no HTML é possivel!</h1>
+    <h3> A tag < audio > é bastante versátil e oferece diversas opções de personalização. </h3>
+     <audio controls>
+      <source src="audio/tvari-tokyo-cafe-159065.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+ <hr>
+  <div>
+    <h3> Outra forma que se pode utilizar é com Script colocando botões com funções </h3>
+    <audio id="meuAudio" src="audio/tvari-tokyo-cafe-159065.mp3" controls></audio>
+    <br><br>
+    <button onclick="playAudio()">Play</button>
+    <button onclick="stopAudio()">Stop</button>
+    <button onclick="loopAudio()">Loop</button>
+
+    <script>
+      function playAudio() {
+        var audio = document.getElementById("meuAudio");
+        audio.play();
+      }
+      function stopAudio() {
+        var audio = document.getElementById("meuAudio");
+        audio.loop = false;
+        audio.pause();
+      }
+      function loopAudio() {
+        var audio = document.getElementById("meuAudio");
+        audio.loop = true;
+        audio.play(); 
+      }
+    </script>
+  </div>
+
+</body>
+</html>
