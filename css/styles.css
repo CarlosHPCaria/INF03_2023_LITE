@@ -19,3 +19,14 @@ em,i {
 pre{    
     margin: 0%;
 }
+
+.destaque {
+    font-weight: bold;
+    color: red;
+  }
+
+
+
+  div.container p {
+    color: green;
+  }
