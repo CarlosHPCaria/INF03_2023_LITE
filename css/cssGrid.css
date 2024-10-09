@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-areas: 
+    'header header header'
+    'nav content aside'
+    'footer footer footer';
+  grid-gap: 10px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+.header {
+  grid-area: header;
+  background-color: lightcoral;
+}
+.nav {
+  grid-area: nav;
+  background-color: lightblue;
+}
+.content {
+  grid-area: content;
+  background-color: lightgreen;
+}
+.aside {
+  grid-area: aside;
+  background-color: lightyellow;
+}
+.footer {
+  grid-area: footer;
+  background-color: lightgray;
+}

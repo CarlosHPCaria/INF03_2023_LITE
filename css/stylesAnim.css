@@ -1,0 +1,114 @@
+.box {
+  width: 180px;
+  height: 100px;
+  background-color: blue;
+  animation: myanimation 5s infinite;
+  text-align: center;
+  align-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: blue;
+    transform: scale(1);
+  }
+  50% {
+    background-color: red;
+    transform: scale(1.2);
+  }
+  100% {
+    background-color: blue;
+    transform: scale(1);
+  }
+}
+
+.button:hover {
+  background-color: rgb(96, 111, 200);
+  transform: scale(1.1);
+}
+
+
+.element {
+  animation: slide-right 5s ease-in-out;
+  width: 180px;
+  height: 100px;
+  background-color: blue;
+  text-align: center;
+  align-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.spinner {
+  animation: spin 0.15s infinite linear;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(164, 164, 196);
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  font-size: 90;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.progress-bar {
+  width: 200px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 10px;
+  animation: progress-bar 2s linear infinite;
+}
+
+@keyframes progress-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.element2 {
+  opacity: 0;
+  transform: translatex(200px);
+  animation: fadeInUp 1s ease-in-out forwards;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  
+  text-align: center;
+  align-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@keyframes fadeInUp {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

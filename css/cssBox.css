@@ -1,0 +1,16 @@
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 15px;
+  background-color: lightblue;
+}
+
+.box2 {
+  position: relative;
+  top: 50px;
+  right: 20px;
+  bottom: 100px;
+  left: 10px;
+  background-color: rgb(25, 130, 36);
+}
