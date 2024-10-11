@@ -112,3 +112,24 @@
     transform: translateY(0);
   }
 }
+h5{
+  text-align: center;
+  padding: 0%;  
+  margin: 0%;
+  }
+
+.card-body{
+  padding: 3%;
+}
+
+.parallax {
+  /* Altura da seção */
+  height: 100px;
+  /* Background fixo */
+  background-attachment: fixed;
+  /* Background-image e outras propriedades CSS */
+  background-image: url('imagem-fundo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
